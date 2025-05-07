@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pacer.VinDecode.API", "src\Pacer.VinDecode.API\Pacer.VinDecode.API.csproj", "{FA338025-8A11-41A8-87B0-3E2567F85FD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResponseManagement", "src\ApiResponseManagement\ApiResponseManagement.csproj", "{E0518C2B-A03D-4B7F-89FD-51022C9398AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B0502163-1F21-4726-8228-547B2D0AA131}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DD18842A-55AF-4594-809E-83983EB7309B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResponseManagement.UnitTests", "test\ApiResponseManagement.UnitTests\ApiResponseManagement.UnitTests.csproj", "{814D7ADF-884C-47E4-9F69-31423BE01646}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC} = {E0518C2B-A03D-4B7F-89FD-51022C9398AC}
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1} = {FA338025-8A11-41A8-87B0-3E2567F85FD1}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devops", "devops", "{13B9F0CA-6908-4AB5-90BB-A9461EF4D01C}"
+	ProjectSection(SolutionItems) = preProject
+		.azuredevops\api-ci-cd.yaml = .azuredevops\api-ci-cd.yaml
+		azuredevops = azuredevops
+		docker-compose.yaml = docker-compose.yaml
+		Dockerfile = Dockerfile
+		.azuredevops\pull_request_template.md = .azuredevops\pull_request_template.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814D7ADF-884C-47E4-9F69-31423BE01646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814D7ADF-884C-47E4-9F69-31423BE01646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814D7ADF-884C-47E4-9F69-31423BE01646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814D7ADF-884C-47E4-9F69-31423BE01646}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA338025-8A11-41A8-87B0-3E2567F85FD1} = {B0502163-1F21-4726-8228-547B2D0AA131}
+		{E0518C2B-A03D-4B7F-89FD-51022C9398AC} = {B0502163-1F21-4726-8228-547B2D0AA131}
+		{814D7ADF-884C-47E4-9F69-31423BE01646} = {DD18842A-55AF-4594-809E-83983EB7309B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E109496-903B-4CFC-A54B-2EC92FACAB17}
+	EndGlobalSection
+EndGlobal
