@@ -1,0 +1,6 @@
+@VinDecoderSpike_HostAddress = http://localhost:5172
+
+GET {{VinDecoderSpike_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

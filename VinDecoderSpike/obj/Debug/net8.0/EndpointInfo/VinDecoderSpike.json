@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "VinDecoderSpike",
+    "version": "1.0"
+  },
+  "paths": {
+    "/vin/{vin}": {
+      "get": {
+        "tags": [
+          "VinDecoderSpike"
+        ],
+        "parameters": [
+          {
+            "name": "vin",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
